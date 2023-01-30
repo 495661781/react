@@ -1,0 +1,17 @@
+.box {
+  background-color: pink;
+  color: skyblue;
+  font-size: 48px;
+}
+
+.list li {
+  list-style: none;
+}
+
+.list li h3 {
+  background: pink;
+}
+
+.list li p {
+  background-color: skyblue;
+}

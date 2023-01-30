@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <script>
+    class Person {
+      // static的作用：将一个属性或方法，变为静态成员
+      static name = "人类";
+      age = 18
+
+      sayHello() {
+        console.log('我是人类  ----->  ',);
+      }
+    }
+
+    const zs = new Person();
+
+    // 实例成员：实例属性和实例方法
+    // 必须先实例化对象，再通过实例对象，去访问的方法和属性，叫做实例成员
+    console.log('zs  ----->  ', zs);
+    zs.age
+
+    // 静态成员：不需要实例化，通过类名.xxx就可以访问的属性和方法
+    Person.sayHi = function () {
+      console.log('我是通过类名访问的方法, sayHi  ----->  ',);
+    }
+
+    Person.gender = "男或女"
+
+
+
+    // JS中：
+    // 实例成员： 必须先实例，再通过实例访问的属性或方法
+    // 静态成员：通过类名，可以直接访问的属性或方法，不需要实例化。
+    // static关键字的作用：将实例成员，变为静态成员
+
+  </script>
+
+</body>
+
+</html>
